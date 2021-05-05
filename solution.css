@@ -93,14 +93,28 @@
 
 /* Esercizio 10 */
 .ex-10-icon{
-    animation-name: roll;
+    animation-name: roll-ex-10;
     animation-iteration-count: infinite;
     animation-duration: 1s;
     animation-timing-function: linear;
     animation-direction: reverse;
 }
 
-@keyframes roll{
-    0%   {transform: rotate(0);}
-    100% {transform: rotate(360deg);}
+@keyframes roll-ex-10{
+    from {transform: rotate(0);}
+    to {transform: rotate(360deg);}
+}
+
+
+/* Esercizio 11 */
+.ex-11-icon:hover{
+    animation-name: roll-ex-11;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+}
+
+@keyframes roll-ex-11{
+    0% {transform: rotate(0);}
+    90% {transform: rotate(calc(360deg - (360deg / 4)));}
+    100%{transform: rotate(0);}
 }
