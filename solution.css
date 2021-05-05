@@ -149,7 +149,7 @@
 /* Esercizio 13 */
 .ex-13-button:hover .ex-13-top-white{
     animation-name: btn-top-roll;
-    animation-duration: 4s;
+    animation-duration: 2s;
     animation-timing-function: linear;
 }
 
@@ -160,4 +160,19 @@
     60%{left: -30px; top: calc(100% - 10px);}
     80%{left: -30px; top: -10px;}
     100%{left: 20px; top: -10px;}
+}
+
+.ex-13-button:hover .ex-13-bottom-white{
+    animation-name: btn-bottom-roll;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+}
+
+@keyframes btn-bottom-roll {
+    0%{right: 40px; top: calc(100% - 10px);}
+    20%{right: calc(100% - 30px); top: calc(100% - 10px);}
+    40%{right: calc(100% - 30px); top: -10px;}
+    60%{right: -30px; top: -10px;}
+    80%{right: -30px; top: calc(100% - 10px);}
+    100%{right: 40px; top: calc(100% - 10px);}
 }
