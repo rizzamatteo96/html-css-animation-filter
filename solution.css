@@ -144,3 +144,20 @@
     50%{right: calc(100% - 60px)}
     100%{right: 40px;}
 }
+
+
+/* Esercizio 13 */
+.ex-13-button:hover .ex-13-top-white{
+    animation-name: btn-top-roll;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+}
+
+@keyframes btn-top-roll {
+    0%{left: 20px; top: -10px;}
+    20%{left: calc(100% - 30px); top: -10px;}
+    40%{left: calc(100% - 30px); top: calc(100% - 10px);}
+    60%{left: -30px; top: calc(100% - 10px);}
+    80%{left: -30px; top: -10px;}
+    100%{left: 20px; top: -10px;}
+}
